@@ -1,0 +1,651 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.align-center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.inner-container {
+  padding: 37px 37px;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 0px 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+#container {
+  width: 100%;
+}
+header {
+  background-color: #805ce5;
+  width: 100%;
+  height: auto;
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#about-burst {
+  background-color: #88fcf0;
+  width: 100%;
+  padding: 100px 100px 0px 100px;
+}
+#info {
+  width: 100%;
+}
+.info-heading {
+  font-family: New Grotesk Round-FIVE;
+  font-size: 50px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #805ce5;
+}
+.info-title p {
+  margin-top: 23px;
+  margin-bottom: 11px;
+  width: 259px;
+  height: 20px;
+  font-family: New Grotesk Round-FIVE;
+  font-size: 20px;
+  text-align: left;
+  color: #805ce5;
+  text-transform: uppercase;
+}
+.info-content p {
+  width: 300px;
+  margin-bottom: 30px;
+  font-family: Hanken;
+  font-size: 15px;
+  color: #000000;
+}
+#sign-up {
+  width: 100%;
+  background-color: #fff;
+  padding: 45px 30px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+.info-img {
+  background-image: url(images/1);
+  width: 100%;
+  height: 200px;
+  /* background-position: top; */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#order-icon {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.order-in-bulk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.order-in-bulk img {
+  width: 102px;
+  height: 102px;
+}
+.icon-title {
+  font-family: New Grotesk Round-FIVE;
+  font-size: 17px;
+  margin-top: 20px;
+  color: #805ce5;
+}
+.sign-up-button {
+  margin-top: 50px;
+  text-align: center;
+}
+.sign-up-button button {
+  width: 300px;
+  background-color: #f3ae2a;
+  border: none;
+  height: 55px;
+  font-family: Hanken;
+  font-size: 17px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.or {
+  text-align: center;
+  margin: 22px 0px;
+  font-family: Hanken;
+  font-size: 15px;
+  color: #000000;
+}
+.have-us-contact {
+  text-align: center;
+}
+.have-us-contact button {
+  width: 300px;
+  height: 55px;
+  background-color: #fff;
+  color: #805ce5;
+  font-size: 17px;
+  border: solid 2px #805ce5;
+  cursor: pointer;
+}
+.brust-dental {
+  margin-top: 21px;
+  width: 100%;
+}
+.brust-dental p {
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  color: #000000;
+  font-family: Hanken;
+}
+#all-about-brust {
+  background-color: #f8f8f8;
+  width: 100%;
+  overflow: hidden;
+  padding: 58px 100px;
+}
+.heading-center {
+  text-align: center;
+  font-family: New Grotesk Round-FIVE;
+  font-size: 40px;
+  line-height: 0.85;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #805ce5;
+}
+.horizontal-line {
+  margin: 40px 0px;
+  border: 2px dotted #353535;
+  border-style: none none dotted;
+}
+#brust-product {
+  width: 100%;
+}
+.product {
+  display: flex;
+  align-items: center;
+}
+.product .product-image {
+  background-color: #88fcf0;
+  border-radius: 50%;
+  height: 121px;
+  width: 121px;
+  margin-right: 10px;
+}
+.product .product-image img {
+  height: 121px;
+  width: 121px;
+}
+.about-product .product-title {
+  font-family: Hanken;
+  font-size: 22px;
+  color: #805ce5;
+  margin-bottom: 13px;
+}
+.description {
+  font-family: Hanken;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: left;
+  color: #000000;
+}
+.vertical-space {
+  margin-bottom: 58px;
+}
+.about-people {
+  background-color: #88fcf0;
+  width: 100%;
+  padding: 30px;
+}
+.people-image img {
+  width: 100%;
+}
+.people-description {
+  padding: 30px;
+}
+.title {
+  font-family: New Grotesk Round-FIVE;
+  font-size: 32px;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #805ce5;
+  margin-bottom: 27px;
+}
+.download-pdf {
+  margin-top: 30px;
+}
+.download-pdf a {
+  font-family: GT Walsheim;
+  font-size: 18px;
+  line-height: 1.38;
+  cursor: pointer;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: right;
+  color: #680ae2;
+}
+.get-started {
+  background-color: #f8f8f8;
+  width: 100%;
+  overflow: hidden;
+  padding: 58px 100px;
+}
+#get-started-icon {
+  margin-top: 40px;
+}
+#get-started-icon img {
+  width: 110px;
+  height: 110px;
+}
+#get-started-icon .steps {
+  font-family: New Grotesk Round-FIVE;
+  font-size: 20px;
+  line-height: 2.9;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #805ce5;
+  cursor: pointer;
+}
+#burst-proucts {
+  width: 100%;
+  padding-top: 80px;
+  margin-bottom: 47px;
+}
+#earn-money {
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 100px 30px;
+}
+.description-center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.description-center p {
+  width: 532px;
+  margin: 25px 0px;
+  font-family: Hanken;
+  font-size: 16px;
+  line-height: 1.38;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #000000;
+}
+#people-reviews {
+  width: 100%;
+  padding: 100px 70px;
+}
+#people-reviews .rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+.rating-icon img {
+  width: 100%;
+}
+.rating p {
+  font-family: Hanken;
+  font-size: 14px;
+  line-height: 1.43;
+  margin-left: 10px;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #805ce5;
+}
+#reviewr-profiles {
+  width: 100%;
+  margin-top: 50px;
+}
+#reviewr-profiles .profile {
+  padding: 15px;
+  border: solid 4px #88fcf0;
+  background-color: #ffffff;
+}
+.profile .p {
+  display: flex;
+  align-items: center;
+}
+.p .p-img img {
+  height: 114px;
+  width: 114px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.p .p-name {
+  font-family: Hanken;
+  font-size: 20px;
+  text-align: left;
+  color: #000000;
+}
+.p .p-work {
+  font-size: 16px;
+  color: #959595;
+}
+.p-upload-img {
+  margin-top: 15px;
+}
+.review-button {
+  text-align: center;
+  padding-top: 50px;
+}
+.review-button button {
+  background-color: #805ce5;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 19px 39px;
+  font-size: 17px;
+  cursor: pointer;
+}
+.title2 {
+  margin-top: 20px;
+  font-size: 22px;
+  font-family: New Grotesk Round-FIVE;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #805ce5;
+  margin-bottom: 27px;
+}
+footer {
+  display: flex;
+  margin-top: 80px;
+  background-color: #680ae2;
+  justify-content: flex-end;
+  padding: 12px 10px;
+}
+.signup-btn button {
+  padding: 15px 30px;
+  background-color: #f3ae2a;
+  border: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  cursor: pointer;
+}
+.contact-us-btn button {
+  padding: 15px 30px;
+  background-color: #fff;
+  border: none;
+  color: #680ae2;
+  text-transform: uppercase;
+  font-size: 15px;
+  cursor: pointer;
+}
+footer .or1 {
+  align-self: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #fff;
+  font-family: Hanken;
+  font-size: 18px;
+}
+/*css for responsive layout */
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  #about-burst {
+    background-color: #88fcf0;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+  }
+  #all-about-brust {
+    padding: 40px 30px;
+  }
+  .info-heading {
+    font-size: 35px;
+  }
+  .info-content p {
+    width: 100%;
+  }
+
+  #sign-up {
+    padding: 35px 10px;
+  }
+  .icon-title {
+    font-family: New Grotesk Round-FIVE;
+    font-size: 12px;
+    margin-top: 16px;
+    color: #805ce5;
+  }
+
+  .order-in-bulk img {
+    width: 70px;
+    height: 70px;
+  }
+  .sign-up-button button {
+    width: 200px;
+    height: 55px;
+    font-family: Hanken;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .have-us-contact button {
+    width: 200px;
+    height: 55px;
+    font-size: 14px;
+  }
+  .about-people {
+    padding: 10px;
+  }
+  .get-started {
+    padding: 40px 30px;
+  }
+  #get-started-icon img {
+    width: 80px;
+    height: 80px;
+  }
+  .description-center p {
+    width: 100%;
+  }
+  .heading-center {
+    font-size: 22px;
+  }
+  .about-product .product-title {
+    font-size: 18px;
+  }
+  .description {
+    font-size: 14px;
+  }
+  #earn-money {
+    padding: 30px 30px;
+  }
+  .people-description {
+    padding: 0px;
+  }
+  #people-reviews {
+    padding: 50px 30px;
+  }
+  #reviewr-profiles .profile {
+    margin-bottom: 20px;
+  }
+  .contact-us-btn button {
+    padding: 10px 20px;
+  }
+  .sign-up-button button {
+    padding: 10px 20px;
+  }
+}
+.wrap,
+.slide-content {
+  width: 100%;
+  height: 400px;
+  display: flex;
+}
+* {
+  margin: 0;
+}
+#slider {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  margin-top: 47px;
+}
+.wrap {
+  position: relative;
+}
+
+.slide1 {
+  background-color: aqua;
+  min-width: 25%;
+}
+.slide2 {
+  background-color: #d5baf8;
+  min-width: 25%;
+}
+.slide3 {
+  background-color: #7bfff2;
+  min-width: 25%;
+}
+.slide4 {
+  background-color: #cea9fd;
+  min-width: 25%;
+}
+.slide5 {
+  background-color: #d5baf8;
+  min-width: 25%;
+}
+.slide6 {
+  background-color: aqua;
+  min-width: 25%;
+  display: block;
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content img {
+  height: 250px;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #805ce5;
+  transform: translateY(20px);
+}
+
+#arrow-left {
+  left: 0;
+  margin-left: 20px;
+  text-align: center;
+  line-height: 38px;
+}
+.arrow button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 12px 15px;
+  outline: 0;
+}
+#arrow-left .left {
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+#arrow-right {
+  right: 0;
+  margin-right: 30px;
+}
+#arrow-right .right {
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+/*css for responsive layout */
+@media only screen and (max-width: 600px) {
+  .slide1 {
+    background-color: aqua;
+    min-width: 50%;
+  }
+  .slide2 {
+    background-color: #d5baf8;
+    min-width: 50%;
+  }
+  .slide3 {
+    background-color: #7bfff2;
+    min-width: 50%;
+  }
+  .slide4 {
+    background-color: #cea9fd;
+    min-width: 50%;
+  }
+  .slide5 {
+    background-color: #d5baf8;
+    min-width: 50%;
+  }
+  .slide6 {
+    background-color: aqua;
+    min-width: 50%;
+  }
+}
